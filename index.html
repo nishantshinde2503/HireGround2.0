@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HireGround 💼 | Gateway to Greatness</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js"></script>
+  
   <meta name="google-adsense-account" content="ca-pub-5104487626524785">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5104487626524785"
-     crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5104487626524785" crossorigin="anonymous"></script>
 </head>
 <body>
+  <a href="saved.html" class="floating-saved-link">💖 Saved Jobs</a>
+
   <header>
     <h1>🚀 HireGround — Your Gateway to Opportunity</h1>
     <p>Curated Indian tech jobs from top brands & cities!</p>
@@ -21,95 +22,127 @@
   <img src="file.png" class="floating-icon" style="left: 30%; animation-delay: 4s;">
   <img src="search.png" class="floating-icon" style="left: 70%; animation-delay: 2s;">
 
-  <!-- 🧑‍💻 Lottie -->
-  <div id="job-seeker-lottie" style="width:400px; margin: 40px auto;"></div>
+<div style="text-align: center; margin: 20px;">
+  <input type="text" id="searchInput" placeholder="🔍 Search jobs..." oninput="handleSearch()" style="padding: 10px; width: 60%; border-radius: 8px; border: 1px solid #ccc;" />
+</div>
+
 
   <!-- 💼 Job Listings -->
   <section id="job-list">
     <div class="job-section" id="job-container"></div>
   </section>
 
+  <!-- 🔢 Pagination Controls -->
+  <div id="pagination" style="text-align: center; margin-top: 20px;"></div>
+
+  <!-- 🎯 Scripts -->
   <script>
     let allJobs = [];
+    let currentPage = 1;
+    const maxPages = 15;
 
-    async function loadJobs() {
-      const response = await fetch('jobs.json');
-      const data = await response.json();
-      allJobs = data.results || data;
-      renderJobs(allJobs);
+    async function loadJobs(page = 1) {
+      currentPage = page;
+      try {
+        const response = await fetch(`jobs/page_${page}.json`);
+        const data = await response.json();
+        allJobs = data.results || data;
+        renderJobs(allJobs);
+        renderPagination();
+      } catch (e) {
+        console.error("❌ Error loading jobs:", e);
+      }
     }
 
-    function renderJobs(jobs) {
-      const container = document.getElementById('job-container');
+    function renderJobs(jobs = allJobs) {
+  const container = document.getElementById('job-container');
+  container.innerHTML = '';
+
+  if (jobs.length === 0) {
+    container.innerHTML = '<p style="text-align:center;">❌ No jobs match your search.</p>';
+    return;
+  }
+
+  jobs.forEach(job => {
+    const companyName = job.company.display_name || "unknown";
+    const logoFileName = companyName.toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]/g, '') + ".png";
+    const logoPath = `company-logos/${logoFileName}`;
+
+    const card = document.createElement('div');
+    card.className = 'job-card';
+    card.innerHTML = `
+      <div class="job-header">
+        <img src="${logoPath}" alt="${companyName} logo" class="company-logo" onerror="this.style.display='none'" />
+        <div>
+          <div class="company-name">${companyName}</div>
+          <div class="role-title">${job.title}</div>
+        </div>
+        <button class="save-btn" onclick='toggleSave(${JSON.stringify(job)})'>💖</button>
+      </div>
+      <hr class="job-divider" />
+      <div class="job-details">
+        📍 ${job.location.display_name} | 🗓️ ${new Date(job.created).toDateString()}
+      </div>
+      <a class="apply-btn" href="${job.redirect_url}" target="_blank" onclick="playClick()">Apply Now 🔗</a>
+    `;
+    container.appendChild(card);
+  });
+}
+
+    function renderPagination() {
+      const container = document.getElementById('pagination');
       container.innerHTML = '';
+      for (let i = 1; i <= maxPages; i++) {
+        const btn = document.createElement('button');
+        btn.textContent = i;
+        btn.className = (i === currentPage) ? 'page-btn active' : 'page-btn';
+        btn.onclick = () => loadJobs(i);
+        container.appendChild(btn);
+      }
+    }
 
-      jobs.forEach(job => {
-        const companyName = job.company.display_name || "unknown";
-        const logoFileName = companyName.toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]/g, '') + ".png";
-        const logoPath = `company-logos/${logoFileName}`;
+let filteredJobs = [];
 
-        const card = document.createElement('div');
-        card.className = 'job-card';
-        card.innerHTML = `
-          <div class="job-header">
-            <img src="${logoPath}" alt="${companyName} logo" class="company-logo" onerror="this.style.display='none'" />
-            <div>
-              <div class="company-name">${companyName}</div>
-              <div class="role-title">${job.title}</div>
-            </div>
-          </div>
-          <hr class="job-divider" />
-          <div class="job-details">
-            📍 ${job.location.display_name} | 🗓️ ${new Date(job.created).toDateString()}
-          </div>
-          <a class="apply-btn" href="${job.redirect_url}" target="_blank" onclick="playClick()">Apply Now 🔗</a>
-        `;
-        container.appendChild(card);
-      });
+function handleSearch() {
+  const keyword = document.getElementById("searchInput").value.toLowerCase();
+  filteredJobs = allJobs.filter(job =>
+    job.title.toLowerCase().includes(keyword) ||
+    job.company.display_name.toLowerCase().includes(keyword) ||
+    job.location.display_name.toLowerCase().includes(keyword)
+  );
+  renderJobs(filteredJobs);
+}
+
+
+    function toggleSave(job) {
+      let saved = JSON.parse(localStorage.getItem("savedJobs") || "[]");
+      const index = saved.findIndex(j => j.title === job.title && j.company.display_name === job.company.display_name);
+      if (index > -1) {
+        saved.splice(index, 1);
+        alert("❌ Removed from Saved");
+      } else {
+        saved.push(job);
+        alert("💖 Saved!");
+      }
+      localStorage.setItem("savedJobs", JSON.stringify(saved));
     }
 
     function playClick() {
       new Audio('click.mp3').play();
     }
 
-    function scheduleSmartRefresh() {
-      const now = new Date();
-      const istOffset = 5.5 * 60;
-      const localTime = new Date(now.getTime() + istOffset * 60000);
-      const hours = localTime.getUTCHours();
-
-      let interval;
-      if (hours >= 8 && hours < 20) {
-        interval = 15 * 60 * 1000;
-      } else {
-        interval = 60 * 60 * 1000;
-      }
-
-      setInterval(() => {
-        loadJobs();
-      }, interval);
-    }
-
-    loadJobs();
-    scheduleSmartRefresh();
-
-    lottie.loadAnimation({
-      container: document.getElementById('job-seeker-lottie'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'job-seeker.json'
-    });
+    loadJobs(); // Load first page initially
   </script>
+
+  <!-- 🔻 Footer -->
   <footer style="text-align: center; padding: 20px; background: #f0f2f5; font-size: 0.9rem;">
-  <p>
-    📄 <a href="privacy.html">Privacy Policy</a> |
-    📜 <a href="terms.html">Terms of Service</a> |
-    ⚠️ <a href="disclaimer.html">Disclaimer</a>
-  </p>
-  <p style="color: #888;">&copy; 2025 HireGround. All rights reserved.</p>
-</footer>
-
-
+    <p>
+      📧 <a class="contact-btn" href="mailto:your@email.com">Email Us</a>  |
+      📄 <a href="privacy.html">Privacy Policy</a> |
+      📜 <a href="terms.html">Terms of Service</a> |
+      ⚠️ <a href="disclaimer.html">Disclaimer</a>
+    </p>
+    <p style="color: #888;">&copy; 2025 HireGround. All rights reserved.</p>
+  </footer>
 </body>
 </html>

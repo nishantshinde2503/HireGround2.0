@@ -1,15 +1,28 @@
-import os
-import json
-from sources import adzuna, csv_reader, sheet_fetcher  # 🧩 Add more sources as needed
+import json, os, shutil
+from sources import adzuna, csv_reader, sheet_fetcher  # 💡 Add more as needed
 
-# ✅ Use Render's environment variables directly
-APP_ID=os.environ.get("APP_ID")
-APP_KEY=os.environ.get("APP_KEY")
+JOBS_DIR = "jobs"
+MAX_PAGES = 15
+
+def shift_pages():
+    os.makedirs(JOBS_DIR, exist_ok=True)
+
+    # Delete the oldest page if exists
+    oldest = os.path.join(JOBS_DIR, f"page_{MAX_PAGES}.json")
+    if os.path.exists(oldest):
+        os.remove(oldest)
+
+    # Shift all pages up (page_14 → page_15, ..., page_1 → page_2)
+    for i in range(MAX_PAGES - 1, 0, -1):
+        src = os.path.join(JOBS_DIR, f"page_{i}.json")
+        dst = os.path.join(JOBS_DIR, f"page_{i+1}.json")
+        if os.path.exists(src):
+            shutil.move(src, dst)
 
 def fetch_and_save_jobs():
     all_jobs = []
 
-    # 🌐 Adzuna API
+    # 🌐 Adzuna
     try:
         adzuna_jobs = adzuna.fetch_jobs()
         all_jobs += adzuna_jobs
@@ -17,7 +30,7 @@ def fetch_and_save_jobs():
     except Exception as e:
         print(f"❌ Adzuna error: {e}")
 
-    # 📄 CSV File
+    # 📄 CSV
     try:
         csv_jobs = csv_reader.fetch_jobs()
         all_jobs += csv_jobs
@@ -33,13 +46,13 @@ def fetch_and_save_jobs():
     except Exception as e:
         print(f"❌ Sheet error: {e}")
 
-    # 🧾 Save all to jobs.json
     try:
-        with open("jobs.json", "w", encoding="utf-8") as f:
+        shift_pages()  # 🔄 Move old pages
+        with open(os.path.join(JOBS_DIR, "page_1.json"), "w", encoding="utf-8") as f:
             json.dump({"results": all_jobs}, f, indent=2)
-        print(f"✅ Combined: {len(all_jobs)} jobs saved to jobs.json")
+        print(f"✅ Saved {len(all_jobs)} jobs to page_1.json")
     except Exception as e:
-        print(f"❌ Error saving file: {e}")
+        print(f"❌ Save error: {e}")
 
     return {"status": "success", "results": all_jobs}
 

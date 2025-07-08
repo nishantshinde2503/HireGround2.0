@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "title": "Python Developer",
+      "company": {
+        "display_name": "Example Corp"
+      },
+      "location": {
+        "display_name": "Mumbai"
+      },
+      "created": "2025-07-01",
+      "redirect_url": "https://example.com/job1",
+      "description": "Work with a great team!"
+    },
+    {
+      "title": "Web Developer",
+      "company": {
+        "display_name": "Sample Ltd"
+      },
+      "location": {
+        "display_name": "Pune"
+      },
+      "created": "2025-07-02",
+      "redirect_url": "https://example.com/job2",
+      "description": "Build beautiful websites!"
+    }
+  ]
+}

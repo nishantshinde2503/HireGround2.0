@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💖 Saved Jobs | HireGround</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>💖 Your Saved Jobs</h1>
+    <p>Only the ones you chose to keep!</p>
+    <a href="index.html" class="back-btn">⬅️ Back to Job Feed</a>
+  </header>
+
+  <section id="saved-jobs-list" class="job-section"></section>
+
+  <script>
+    const saved = JSON.parse(localStorage.getItem("savedJobs") || "[]");
+    const container = document.getElementById("saved-jobs-list");
+
+    function renderSavedJobs(jobs) {
+      if (jobs.length === 0) {
+        container.innerHTML = `<p style="text-align:center;">😢 No jobs saved yet.</p>`;
+        return;
+      }
+
+      container.innerHTML = '';
+      jobs.forEach(job => {
+        const companyName = job.company.display_name || "Unknown";
+        const logoFileName = companyName.toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]/g, '') + ".png";
+        const logoPath = `company-logos/${logoFileName}`;
+
+        const card = document.createElement('div');
+        card.className = 'job-card';
+        card.innerHTML = `
+          <div class="job-header">
+            <img src="${logoPath}" alt="${companyName}" class="company-logo" onerror="this.style.display='none'" />
+            <div>
+              <div class="company-name">${companyName}</div>
+              <div class="role-title">${job.title}</div>
+            </div>
+          </div>
+          <hr class="job-divider" />
+          <div class="job-details">
+            📍 ${job.location.display_name} | 🗓️ ${new Date(job.created).toDateString()}
+          </div>
+          <a class="apply-btn" href="${job.redirect_url}" target="_blank">Apply Now 🔗</a>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    renderSavedJobs(saved);
+  </script>
+</body>
+</html>
