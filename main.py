@@ -3,8 +3,8 @@ import json
 from sources import adzuna, csv_reader, sheet_fetcher  # 🧩 Add more sources as needed
 
 # ✅ Use Render's environment variables directly
-APP_ID = os.environ.get("APP_ID")
-APP_KEY = os.environ.get("APP_KEY")
+APP_ID=os.environ.get("APP_ID")
+APP_KEY=os.environ.get("APP_KEY")
 
 def fetch_and_save_jobs():
     all_jobs = []
