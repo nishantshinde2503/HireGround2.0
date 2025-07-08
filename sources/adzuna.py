@@ -5,6 +5,9 @@ def fetch_jobs():
     app_id = os.environ.get("APP_ID")
     app_key = os.environ.get("APP_KEY")
 
+    if not app_id or not app_key:
+        raise ValueError("APP_ID or APP_KEY not set in environment.")
+
     api_url = f"https://api.adzuna.com/v1/api/jobs/in/search/1?app_id={app_id}&app_key={app_key}&where=India&results_per_page=25"
 
     res = requests.get(api_url)

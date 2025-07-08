@@ -11,7 +11,7 @@ def fetch_and_save_jobs():
 
     # 🌐 Adzuna API
     try:
-        adzuna_jobs = adzuna.fetch_jobs(APP_ID, APP_KEY)
+        adzuna_jobs = adzuna.fetch_jobs()
         all_jobs += adzuna_jobs
         print(f"✅ Adzuna jobs: {len(adzuna_jobs)}")
     except Exception as e:
