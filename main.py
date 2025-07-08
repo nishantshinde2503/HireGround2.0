@@ -1,13 +1,19 @@
+import os
 import json
 from sources import adzuna, csv_reader, sheet_fetcher  # 🧩 Add more sources as needed
+
+# ✅ Use Render's environment variables directly
+APP_ID = os.environ.get("APP_ID")
+APP_KEY = os.environ.get("APP_KEY")
 
 def fetch_and_save_jobs():
     all_jobs = []
 
     # 🌐 Adzuna API
     try:
-        all_jobs += adzuna.fetch_jobs()
-        print(f"✅ Adzuna jobs: {len(all_jobs)}")
+        adzuna_jobs = adzuna.fetch_jobs(APP_ID, APP_KEY)
+        all_jobs += adzuna_jobs
+        print(f"✅ Adzuna jobs: {len(adzuna_jobs)}")
     except Exception as e:
         print(f"❌ Adzuna error: {e}")
 
