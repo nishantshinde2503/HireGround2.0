@@ -1,6 +1,306 @@
 {
   "results": [
     {
+      "title": "React Developer",
+      "company": {
+        "display_name": "M365Connect"
+      },
+      "location": {
+        "display_name": "Bangalore, Karnataka"
+      },
+      "created": "2025-05-04T21:53:49Z",
+      "redirect_url": "https://www.adzuna.in/details/5180290703?utm_medium=api&utm_source=6fec1d82",
+      "description": "We are seeking a skilled React Developer to join our team and contribute to the web application development in the SharePoint environment. The ideal candidate should have expertise in modern React methodologies, including functional components and hooks. While proficiency in SharePoint SPFx is a plus, we welcome candidates who can quickly gain competence in its usage. Responsibilities: Design and implement scalable React components. Integrate SharePoint framework and REST APIs for optimized dat\u2026"
+    },
+    {
+      "title": "Embedded Engineer",
+      "company": {
+        "display_name": "D Recruitment Company"
+      },
+      "location": {
+        "display_name": "Chennai, Tamil Nadu"
+      },
+      "created": "2025-06-06T20:42:25Z",
+      "redirect_url": "https://www.adzuna.in/details/5236360054?utm_medium=api&utm_source=6fec1d82",
+      "description": "Bachelors or Masters in Electronics with 12 years of experience WLAN RF Front-end design, validation, and debug. Expertise in System architecture is needed. Detailed JD Bachelors or Masters in Electronics/Communications Engineering 12 years of experience in WLAN RF Front-end design, tuning and debug. Experience in complete product life cycle for the Wi-fi products from design to customer support. WiFi System level understanding and architecture is a must. Strong RF board design and debug experi\u2026"
+    },
+    {
+      "title": "Flutter Developer",
+      "company": {
+        "display_name": "Techdocklabs"
+      },
+      "location": {
+        "display_name": "Lucknow, Uttar Pradesh"
+      },
+      "created": "2025-06-06T20:42:19Z",
+      "redirect_url": "https://www.adzuna.in/details/5236359260?utm_medium=api&utm_source=6fec1d82",
+      "description": "Design and Build cross-platform mobile apps for Android and IOS using Flutter. \u2022 Translate and Build the designs and Wireframes into high-quality responsive UI code. \u2022 Experience in submitting mobile applications to Play Store and App Store. \u2022 Experience with any of the state management solutions like Provider etc. \u2022 Knowledge About firebase. \u2022 Mobile app architecture design and optimization."
+    },
+    {
+      "title": "Consultant / Sr Consultant - Data Engineer (Databricks)",
+      "company": {
+        "display_name": "Fresh Gravity"
+      },
+      "location": {
+        "display_name": "India"
+      },
+      "created": "2025-06-27T14:19:48Z",
+      "redirect_url": "https://www.adzuna.in/details/5271110480?utm_medium=api&utm_source=6fec1d82",
+      "description": "About Fresh Gravity: Founded in 2015 and rapidly growing, Fresh Gravity (www.freshgravity.com) is a business and technology consulting company at the cutting-edge of digital transformation. We drive digital success for our clients by helping them adopt transformative technologies that make them nimble, adaptive and responsive to their rapidly-changing business needs. Our unparalleled digital transformation expertise combines business strategy prowess with digital technologies know-how. Our expe\u2026"
+    },
+    {
+      "title": "Automotive Android IVI Developer_Pune",
+      "company": {
+        "display_name": "Hunarstreet Technologies"
+      },
+      "location": {
+        "display_name": "Pune, Maharashtra"
+      },
+      "created": "2025-06-06T20:46:12Z",
+      "redirect_url": "https://www.adzuna.in/details/5236370283?utm_medium=api&utm_source=6fec1d82",
+      "description": "JOB DESCRIPTION : Android IVI \u00b7 Experience working on Automotive IVI (In Vehicle Infotainment) with Automotive Android or Linux \u00b7 Excellent understanding of design principles and implementation of MVVM for Android or Android \u00b7 Experience working with BLE in Android or Linux \u00b7 Experience with Android HALs and JNI/JNA experience \u00b7 Windowing management, and boot optimization for graphics for Linux and Android Experience : 9-12 Yrs Location : Pune"
+    },
+    {
+      "title": "Hindi Teacher (Grades 5 & 6) needed for a CBSE proposed School in Nashik-422009",
+      "company": {
+        "display_name": "EducoHire"
+      },
+      "location": {
+        "display_name": "Dindori, Nashik"
+      },
+      "created": "2025-07-08T07:22:47Z",
+      "redirect_url": "https://www.adzuna.in/details/5291196772?utm_medium=api&utm_source=6fec1d82",
+      "description": "Hindi Teacher (Grades 5 & 6) needed for a CBSE proposed School in Nashik-422009 Qualifications : BA/B.Ed in Hindi 2 to 5 years of Experience Strong Subject Knowledge Good Communication Skills School Timings : 7:30 a.m to 3:30 p.m Benefits : Salary Range : 25k to 37k depending upon their caliber Accommodation in sharing or Accommodation Cost will be paid by the School Interested candidates, kindly respond at rashee@educohire.com"
+    },
+    {
+      "title": "Principal Software Engineer- Java Fullstack",
+      "company": {
+        "display_name": "NielsenIQ"
+      },
+      "location": {
+        "display_name": "Chennai, Tamil Nadu"
+      },
+      "created": "2025-07-05T11:02:41Z",
+      "redirect_url": "https://www.adzuna.in/details/5286672231?utm_medium=api&utm_source=6fec1d82",
+      "description": "Job Description Principal Engineer Java Fullstack, Chennai Our NielsenIQ Technology teams are working on revamping multiple platform, a unified, global, open data ecosystem powered by Microsoft Azure. Our clients around the world rely on NielsenIQ\u2019s data and insights to innovate and grow. As a Full stack Software Engineer, you\u2019ll be part of a team of smart, highly skilled technologists who are passionate about learning and prototyping cutting-edge technologies. As a market research company, we \u2026"
+    },
+    {
+      "title": "Senior Software Engineer - Java Developer",
+      "company": {
+        "display_name": "SmarTek21"
+      },
+      "location": {
+        "display_name": "India"
+      },
+      "created": "2025-07-03T05:43:30Z",
+      "redirect_url": "https://www.adzuna.in/details/5280673716?utm_medium=api&utm_source=6fec1d82",
+      "description": "Job Description : The candidate should have hands on experience on developing and working on web applications using Java/ Servlets/J2EE technologies and relevant frameworks. Should be comfortable working with both legacy architecture and microservices Should have worked on JSP, JS/Jquery/Backbone/React, latest standards on Responsive UI and implemented in at least 2-3 projects. Project experience with enterprise clients will be an added advantage Understand the J2EE web application architecture\u2026"
+    },
+    {
+      "title": "Digital Marketing Specialist",
+      "company": {
+        "display_name": "Igxact Soft Technologies Pvt. Ltd."
+      },
+      "location": {
+        "display_name": "Mohali, Punjab"
+      },
+      "created": "2025-06-06T20:42:39Z",
+      "redirect_url": "https://www.adzuna.in/details/5236361994?utm_medium=api&utm_source=6fec1d82",
+      "description": "We are looking for fresher and experienced candidates in Digital Marketing to assist in the planning, execution, and optimization of our online marketing efforts. Work from office only. Location- Mohali Punjab Freshers can also apply Responsibilities Assist in the formulation of strategies to build a lasting digital connection with consumers Plan and monitor the ongoing company presence on social media (Twitter, Facebook, etc.) Launch optimized online adverts through Google Adwords, Facebook, e\u2026"
+    },
+    {
+      "title": "AVP2 - IT Governance & Compliance",
+      "company": {
+        "display_name": "Intuitive Apps"
+      },
+      "location": {
+        "display_name": "Navi Mumbai, Maharashtra"
+      },
+      "created": "2025-06-06T20:43:01Z",
+      "redirect_url": "https://www.adzuna.in/details/5236364425?utm_medium=api&utm_source=6fec1d82",
+      "description": "Hello Everyone, We're hiring the candidates having experience in IT governance and Compliance for the position of AVP2. Apply now! Share your resume to inshita@intuitiveapps.com Job Description- Experience- 11 Yrs Location- Navi Mumbai (Ghansoli) Preference- Certification in IT Security, IT Governance, IT Infrastructure Exposure Areas- IT Governance & Compliance Data Policy Governance IT Quality Assurance IT Health Check IT Controls monitoring Expected job role 1. Creation of policies and frame\u2026"
+    },
+    {
+      "title": "Content Writer Executive",
+      "company": {
+        "display_name": "Fashion TV India"
+      },
+      "location": {
+        "display_name": "Mumbai, Maharashtra"
+      },
+      "created": "2025-06-06T20:45:52Z",
+      "redirect_url": "https://www.adzuna.in/details/5236368728?utm_medium=api&utm_source=6fec1d82",
+      "description": "About Fashion-TV: Fashion TV, the world's largest fashion and lifestyle media, Fashion TV is a global phenomenon that has revolutionized the fashion industry, inspiring fashion enthusiasts worldwide with the power of media. We represent an empire where fashion, glamor, and a luxurious lifestyle adorn the world, making us a true brand ambassador for all the brands we represent. Areas of Responsibilities Research industry-related topics (combining online sources, interviews, and studies) Write cl\u2026"
+    },
+    {
+      "title": "Senior Engineer - Product Transfer",
+      "company": {
+        "display_name": "Lifelancer"
+      },
+      "location": {
+        "display_name": "India"
+      },
+      "created": "2025-06-25T22:30:55Z",
+      "redirect_url": "https://www.adzuna.in/details/5267762355?utm_medium=api&utm_source=6fec1d82",
+      "description": "Job Title: Senior Engineer - Product Transfer Job Location: Gurugram, Haryana, India Job Location Type: Hybrid Job Contract Type: Full-time Job Seniority Level: Associate What Will You Do As part of product transfers of a product line that is being relocated from one site to another, you will actively shape the process development and ensuring that all activities are completed and documented in accordance with the Stryker procedures. In addition to coordinating internal and external partners, y\u2026"
+    },
+    {
+      "title": "Drupal Developer",
+      "company": {
+        "display_name": "Careernet Technologies Pvt Ltd"
+      },
+      "location": {
+        "display_name": "Bangalore, Karnataka"
+      },
+      "created": "2025-06-06T20:49:18Z",
+      "redirect_url": "https://www.adzuna.in/details/5236373165?utm_medium=api&utm_source=6fec1d82",
+      "description": "Below details as follows: Experience : 3 Years to 4 Years Location : Bangalore ( work from office). Notice Period : Immediate. Mode Of Employment : CTR for 6 months. Budget : Max 9 LPA Job Description: Job Description: \u2022 Responsible for developing medium to Large websites using Drupal 7, Drupal 8, Drupal 9/10, PHP, Laravel framework, NodeJS, ReactJS, CI/CD tools \u2022 Using various Drupal tools including Views, Views UI, Views Slideshow and CCK, URL alias, Migrate, Ctools, Image, Pathauto, Librarie\u2026"
+    },
+    {
+      "title": "Radiologist MD DNB dmrd consultant for Pitampura Delhi location",
+      "company": {
+        "display_name": "Medico Hub"
+      },
+      "location": {
+        "display_name": "Delhi, India"
+      },
+      "created": "2025-06-06T20:52:55Z",
+      "redirect_url": "https://www.adzuna.in/details/5236382145?utm_medium=api&utm_source=6fec1d82",
+      "description": "Overview: The Radiologist MD DNB DMRD Consultant plays a pivotal role in the healthcare system, particularly in the diagnosis and treatment planning of patients by interpreting medical images. This role is essential for ensuring accurate diagnoses, guiding treatment decisions, and improving patient outcomes. Based in Pitampura, Delhi, this consultant will be vital in collaborating with other healthcare professionals and specialists, working towards a holistic approach to patient care. The consu\u2026"
+    },
+    {
+      "title": "Accounts Executive",
+      "company": {
+        "display_name": "VHAN Busienss Engagements"
+      },
+      "location": {
+        "display_name": "Chennai, Tamil Nadu"
+      },
+      "created": "2025-06-06T20:52:16Z",
+      "redirect_url": "https://www.adzuna.in/details/5236379206?utm_medium=api&utm_source=6fec1d82",
+      "description": "Job Title Assistant Manager \u2013 Finance & Accounts Job Overview Accounting, Bookkeeping, GST returns, Income Tax knowledge and support to Sales team and involvement into operations Responsibilities and Duties Provide a bullet point list of the responsibilities and duties of this job. Book-keeping of all the transactions on a daily basis Bank payments & Payment processing from Bank and Reconciliations on periodical basis Coordinating with stores and arranging the timely payments as per the due dat\u2026"
+    },
+    {
+      "title": "RIC Developer (Software Developer \u2013 Kubernetes & Helm)",
+      "company": {
+        "display_name": "HyringNinja"
+      },
+      "location": {
+        "display_name": "Bangalore, Karnataka"
+      },
+      "created": "2025-06-06T20:52:51Z",
+      "redirect_url": "https://www.adzuna.in/details/5236381898?utm_medium=api&utm_source=6fec1d82",
+      "description": "RIC Developer (Software Developer \u2013 Kubernetes & Helm) Experience: 6 Years Title: Senior Software Engineer/Lead Engineer (IC Roles) Location \u2013 Bangalore/Any can relocate to Bangalore Budget \u2013 28 LPA No. of Round: 5 Rounds (3 Internal  2 Client) Notice Period: Immediate to 15 Days Job Summary: We are seeking a skilled and innovative Software Developer to join our dynamic team. The ideal candidate will have expertise in Helm, Kubernetes, and Docker, along with strong proficiency in programming la\u2026"
+    },
+    {
+      "title": "Software Engineer - Frontend",
+      "company": {
+        "display_name": "S and S Consultants"
+      },
+      "location": {
+        "display_name": "Mumbai, Maharashtra"
+      },
+      "created": "2025-06-06T20:54:01Z",
+      "redirect_url": "https://www.adzuna.in/details/5236383764?utm_medium=api&utm_source=6fec1d82",
+      "description": "T Project Masterwork is an AI-based global entertainment company operating in stealth mode. The Company's founding team includes seasoned entrepreneurs and former senior leaders from Netflix, Disney, Marvel, Amazon Studios, Jio, among others. We are excited to bring our vision to life - creating the next generation Disney from the East, using virtual production technology to build beloved characters and stories in live-action format. Our initial focus will be on mythological stories from India,\u2026"
+    },
+    {
+      "title": "Business Development Executive",
+      "company": {
+        "display_name": "Starkflow Technologies Private Limited"
+      },
+      "location": {
+        "display_name": "Ahmedabad, Gujarat"
+      },
+      "created": "2025-07-01T05:42:22Z",
+      "redirect_url": "https://www.adzuna.in/details/5276454426?utm_medium=api&utm_source=6fec1d82",
+      "description": "Business Development Executive Job description About Signature: At \"The Signature Design & Web Solutions\", we\u2019re not just in the business of advertising; we\u2019re in the business of sparking imagination, driving innovation, and making brands unforgettable. We\u2019re a dynamic team of thinkers, creators, and strategists committed to pushing boundaries and crafting campaigns that captivate and convert. If you\u2019re ready to be part of something extraordinary, join us! Job Description: Are you a passionate \u2026"
+    },
+    {
+      "title": "Golang Engineer",
+      "company": {
+        "display_name": "CCTECH"
+      },
+      "location": {
+        "display_name": "Yerwada, Pune"
+      },
+      "created": "2025-06-24T21:58:26Z",
+      "redirect_url": "https://www.adzuna.in/details/5265916507?utm_medium=api&utm_source=6fec1d82",
+      "description": "We are seeking a Backend Developer skilled in Go to contribute end-to-end on cloud-native, web-scale services. You\u2019ll join our self-organized agile team, own back-end features, and help run production operations under guidance from senior engineers. Responsibilities Collaborate in an agile team to build, own, and run backend services. Design and implement RESTful APIs and microservices in Golang. Contribute to service reliability: monitoring, alerting, metrics, logging, and on-call rotations. T\u2026"
+    },
+    {
+      "title": "Validation Lead - KWS",
+      "company": {
+        "display_name": "Lifelancer"
+      },
+      "location": {
+        "display_name": "Pune, Maharashtra"
+      },
+      "created": "2025-06-25T22:30:55Z",
+      "redirect_url": "https://www.adzuna.in/details/5267762399?utm_medium=api&utm_source=6fec1d82",
+      "description": "Job Title: Validation Lead - KWS Job Location: Pune, Maharashtra, India Job Location Type: On-site Job Contract Type: Full-time Job Seniority Level: Mid-Senior level About Us Livspace is Asia\u2019s largest and fastest-growing home interiors and renovation platform. Leveraging its proprietary technology, the company delivers end-to-end home interior and renovation solutions, encompassing modular solutions, furniture, false ceilings, soft furnishings, d\u00e9cor, civil works, and more. The company serves \u2026"
+    },
+    {
+      "title": "Senior .Net Engineer",
+      "company": {
+        "display_name": "Mindera"
+      },
+      "location": {
+        "display_name": "India"
+      },
+      "created": "2024-08-14T22:40:24Z",
+      "redirect_url": "https://www.adzuna.in/details/4825694590?utm_medium=api&utm_source=6fec1d82",
+      "description": "Are you an experienced .NET engineer looking to take your career to the next level? Mindera is seeking a talented and passionate Senior .NET Engineer to join our team. As a Senior Engineer, you will have the opportunity to work on challenging and cutting-edge projects, using the latest technologies and frameworks. At Mindera, we value innovation and technical excellence. We believe in providing our engineers with the freedom to explore new ideas and solutions, and we encourage a culture of cont\u2026"
+    },
+    {
+      "title": "Project Lead Engineer",
+      "company": {
+        "display_name": "HuPerp Management and Consultancy Services LLP"
+      },
+      "location": {
+        "display_name": "Bangalore, Karnataka"
+      },
+      "created": "2025-06-06T20:45:54Z",
+      "redirect_url": "https://www.adzuna.in/details/5236368859?utm_medium=api&utm_source=6fec1d82",
+      "description": "Handle about 6 to 8 projects with a team size of 5. Guide and supervise the team members to meet the deliverables under strict schedule. The candidate must have handled the following: \u00b7 Basic study for selection of equipment parameters with option analysis \u00b7 Procurement activities like preparing specifications, making bid analysis and purchase recommendations, vendor drawing review/ approval, cost estimation etc \u00b7 Preparation of construction drawings like Single line diagrams, General arrangeme\u2026"
+    },
+    {
+      "title": "Human Resources Manager",
+      "company": {
+        "display_name": "CRA"
+      },
+      "location": {
+        "display_name": "Noida, Ghaziabad"
+      },
+      "created": "2025-06-11T03:07:31Z",
+      "redirect_url": "https://www.adzuna.in/details/5243343307?utm_medium=api&utm_source=6fec1d82",
+      "description": "At CRA, we're creating purpose-engineered solutions that power the Energy and Defence sectors. As an integrated engineering powerhouse, we design, engineer, and manufacture everything in-house - giving us unmatched control over quality and innovation. Industry leaders trust our solutions, including BrahMos Aerospace, ONGC, OIL, Indian Air Force, and Schlumberger. We've entered an extraordinary growth phase - tripling in size over the last three years. Today, with a team strength of 100, we're p\u2026"
+    },
+    {
+      "title": "Accounts Executive",
+      "company": {
+        "display_name": "thechemicalcenter"
+      },
+      "location": {
+        "display_name": "Udaipur, Rajasthan"
+      },
+      "created": "2025-06-06T20:42:28Z",
+      "redirect_url": "https://www.adzuna.in/details/5236360508?utm_medium=api&utm_source=6fec1d82",
+      "description": "Job description Create detailed business plans designed to attain predetermined goals and quotas Manage the entire sales cycle from finding a client to securing a deal Unearth new sales opportunities through networking and turn them into long-term partnerships Present products to prospective clients Provide professional after-sales support to maximize customer loyalty Remain in regular contact with your clients to understand and meet their needs Respond to complaints and resolve issues to the c\u2026"
+    },
+    {
+      "title": "Proposal Analyst- Satellite Industry",
+      "company": {
+        "display_name": "Astrome Technologies"
+      },
+      "location": {
+        "display_name": "India"
+      },
+      "created": "2025-05-29T19:58:41Z",
+      "redirect_url": "https://www.adzuna.in/details/5221777954?utm_medium=api&utm_source=6fec1d82",
+      "description": "We are seeking an experienced and driven Proposal Analyst / Business Development Executive with a strong understanding of satellite communication technologies and business models. The ideal candidate will have hands-on experience in analyzing, preparing, and responding to technical and commercial proposals within the satellite or related telecom industries. Key Responsibilities: Analyze and respond to technical and commercial RFPs/RFIs/RFQs, with a specific focus on satellite systems and servic\u2026"
+    },
+    {
       "title": "Python Developer",
       "company": {
         "display_name": "Example Corp"
